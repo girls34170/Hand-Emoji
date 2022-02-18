@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>
+            Hand Emoji
+        </title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Lobster&family=Redressed&family=Shizuru&family=Supermercado+One&family=Syne+Tactile&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+            <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+            <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h3 class="btn btn-primary heading">Hand Emoji !!<br>
+                <span>&#9996;</span>
+                <span>&#129311;</span>
+                <span>&#128133;</span>
+                <span>&#128077;</span>
+                <span>&#128076;</span>
+                <span>&#128074;</span>
+            </h3>
+            <br>
+            <br>
+            <p>Take your selfie to generate Hand Emoji 
+                <br><br>
+                <b Style="color:rgb(255, 230, 0)">Are you ok ??</b>
+                <br><br>
+                <b Style="color:rgb(49, 45, 45)">Are you perfect ??</b>
+                <br><br>
+                <b Style="color:rgb(230, 197, 138)">Are you a winner ??</b>
+                <br><br>
+            </p>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Web cam view</label>
+                <div id="camera"></div>
+                <br><br>
+                <button class="btn btn-primary" onclick="take_snapshot()">Capture Image</button>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <Label>Prediction 1</Label>
+                <p class="Emotion_Name" id="result1"></p>
+                <p class="emoji" id="update_emoji"></p>
+                <label>Prediction 2</label>
+                <p class="Emotion_name" id="result2"></p>
+                <p class="emoji" id="update_emoji1"></p>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Snapshot</label>
+                <div id="result"></div>
+                <br><br>
+                <button class="btn btn-primary" onclick="check()">Predict Emoji</button>
+            </div>
+            </center>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

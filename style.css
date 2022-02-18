@@ -1,0 +1,23 @@
+body{
+    background-image:url(bg.jpg);
+    background-size:cover;
+    font-family: 'Redressed', cursive;
+}
+heading{
+    font-size:20px;
+}
+#camera,#result{
+    border:2px ridge black;
+    width:350px;
+    height:300px;
+}
+.emoji{
+    font-size:30px;
+}
+label{
+    font-size:15px;
+    color:rgb(236, 191, 122);
+    padding:6px;
+    border-radius:10px;
+    background-color:rgb(235, 146, 45);
+}
